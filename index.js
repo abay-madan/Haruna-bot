@@ -589,3 +589,10 @@ _Pesan: Gunakan bot dengan bijak ya!_ 🚀
     })
 }
 startBot()
+
+// Taruh di sini, Bay:
+const http = require('http')
+http.createServer((req, res) => {
+    res.write('Haruna Bot is running!')
+    res.end()
+}).listen(process.env.PORT || 8080)
